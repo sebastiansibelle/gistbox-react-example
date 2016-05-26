@@ -12,15 +12,15 @@ var GistBox = React.createClass({
     addGist: function(username) {
         var url = `https://api.github.com/users/${username}/gists`;
 
-        $.get(url, function(result){
-
+        $.get(url, (result) => {
+            // this
             var username = result[0].owner.login;
             var url = result[0].html_url;
 
             var gists = this.state.gists.concat({username, url});
             this.setState({ gists });
 
-        }.bind(this));
+        });
 
 
     },
