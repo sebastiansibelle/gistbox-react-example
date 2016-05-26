@@ -41,4 +41,4 @@ var GistBox = React.createClass({
 
 });
 
-React.render(<GistBox />, document.querySelector("#app"))
+export default GistBox;
