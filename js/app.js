@@ -1,3 +1,3 @@
-import Gistbox from './components/Gistbox';
+import GistBox from './components/Gistbox';
 
 React.render(<GistBox />, document.querySelector("#app"))
